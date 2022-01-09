@@ -41,7 +41,7 @@ class Job_description(Login_Monster):
     location_1 = 'Gurgaon'
     def Job_profile(self):
         ''' Job profile function will hlp in searching for the required profile and location, wherever you need and whatever you are looking
-        for. You can hanfe location and profile, under profile = ''. and location_1 = ''. 
+        for. You can change location and profile, under profile = ''. and location_1 = ''. 
         '''
         self.search = self.driver.find_element(By.XPATH, "//input[@class= 'input search-bar home_ac']")
         self.search.click()
