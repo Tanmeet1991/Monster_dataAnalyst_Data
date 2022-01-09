@@ -17,7 +17,7 @@ class Web:
 class Login_Monster(Web):
     def login(self):
         '''This function will do the login process, with email id and password, and will print 'Login into Monster site:- Successful.',
-        else it will the error if any.
+        else it will give the error if any.
         '''
         try:
             self.login_button = self.driver.find_element(By.XPATH, "//div[@class='nav-wrapper flex-container slide-effect']//child::ul[@class='mq-menu-list user-section flex-item']//child::ul//child::li//child::a//child::span[text()= 'Jobseeker Login']")
@@ -40,7 +40,7 @@ class Job_description(Login_Monster):
     profile = 'Data Analyst'
     location_1 = 'Gurgaon'
     def Job_profile(self):
-        ''' Job profile function will hlp in searching for the required profile and location, wherever you need and whatever you are looking
+        ''' Job profile function will help in searching for the required profile and location, wherever you need and whatever you are looking
         for. You can change location and profile, under profile = ''. and location_1 = ''. 
         '''
         self.search = self.driver.find_element(By.XPATH, "//input[@class= 'input search-bar home_ac']")
