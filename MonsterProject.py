@@ -62,7 +62,7 @@ class Data(Job_description):
         ''' Job Postings function will scrape all the postings and all required details regarding the searched job profile,
         such as, Job title, salary, requirements, etc. also it will scrape all the data and convert all it into csv file.
         '''
-        self.df = pd.DataFrame({'Job_Title':[''], 'Company':[''], 'Experience':[''], 'Salary':[''], 'Job_Description':[''], 'Post_Date':[''], 'Link':['']})
+        self.df = pd.DataFrame({'Job_Title':[''], 'Company':[''], 'Experience':[''], 'Job_Description':[''], 'Post_Date':['']})
         
         while True:
             self.scroll_down_1 = self.driver.execute_script('window.scrollTo(0, 2000)')
